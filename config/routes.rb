@@ -13,9 +13,9 @@ SampleApp::Application.routes.draw do
   # get "static_pages/about"
   # get "static_pages/contact"
   
-  match '/signup',  to: 'users#new',            via: 'get'
-  match '/signin',  to: 'sessions#new',         via: 'get'
-  match '/signout',  to: 'sessions#destroy'      via: 'delete'
+  match '/signup',  to: 'users#new',             via: 'get'
+  match '/signin',  to: 'sessions#new',          via: 'get'
+  match '/signout',  to: 'sessions#destroy',      via: 'delete'
 
 
   match '/help',    to: 'static_pages#help',    via: 'get'
